@@ -1,0 +1,200 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #111b47;
+}
+
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-form button {
+  padding: 10px;
+  background-color: #111b47;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-form button:hover {
+  background-color: #0f1638;
+}
+
+.filter-bar {
+  margin-bottom: 20px;
+}
+
+.filter-bar select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inventory-table th,
+.inventory-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.inventory-table th {
+  background-color: #111b47;
+  color: #fff;
+  cursor: pointer;
+}
+
+.inventory-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.inventory-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+.low-stock-row {
+  background-color: #ffe6e6;
+}
+
+.low-stock {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.low-stock-icon {
+  margin-left: 5px;
+  font-size: 1rem;
+  color: #d32f2f;
+}
+
+
+.inventory-table button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.inventory-table button.edit-btn {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.inventory-table button.edit-btn:hover {
+  background-color: #45a049;
+}
+
+.inventory-table button.delete-btn {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.inventory-table button.delete-btn:hover {
+  background-color: #e53935;
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .add-form {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .add-form input,
+  .filter-bar select {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .inventory-table th,
+  .inventory-table td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .inventory-table {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .add-form {
+    gap: 4px;
+  }
+
+  .add-form input,
+  .filter-bar select {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  .inventory-table th,
+  .inventory-table td {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  .inventory-table button {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+}
+
+.stock-items-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #333;
+}
